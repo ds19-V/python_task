@@ -1,0 +1,25 @@
+# merge two python dictionaries
+dict1 = {'apple': 1, 'banana': 2}
+dict2 = {'cantaloupe': 3, 'dates': 4}
+dict1.update(dict2)
+print(dict1)
+
+# remove a key from dictionary
+dict1.pop('apple')
+print(dict1)
+
+# map 2 lists into a dictionary
+a = {'apple', 'banana'}
+b = {1, 2}
+c = dict(zip(a, b))
+print(c)
+
+# length of a set
+set_1 = set([1, 2, 3, 4, 5])
+print(len(set_1))
+
+# remove intersection of 2nd set from 1st set
+set_a = set([1, 2, 3, 4, 5])
+set_b = set([4, 5, 6, 7, 8])
+set_a.difference_update(set_b)
+print(set_a)
