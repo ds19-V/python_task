@@ -1,0 +1,42 @@
+# add an item to list
+
+a = [1, 2, 3, 4, 5]
+a.append(6)
+print(a)
+
+# delete an item
+
+a.remove(3)
+print(a)
+
+# store largest no to a variable
+
+def max_num(a):
+    max = a[0]
+    for item in a:
+        if item > max:
+            max = item
+    return max
+print("Largest number is " + str(max_num(a)))
+
+# store smallest no to a variable
+
+def min_num(a):
+    min = a[0]
+    for item in a:
+        if item < min:
+            min = item
+    return min
+print("Smallest no is " + str(min_num(a)))
+
+# reverse a tuple
+
+b = ('e', 'd', 'c', 'b', 'a')
+c = reversed(b)
+print(tuple(c))
+
+# convert tuple to a list
+
+d = ("apple", "banana", "cantaloupe")
+e = list(d)
+print(d)
