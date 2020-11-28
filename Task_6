@@ -19,6 +19,8 @@ for i in range(i, n+1):
     b = s
     s = a+b
 
+# armstrong number
+
 def armstrong():
     num = int(input("Enter a number: "))
     sum = 0
