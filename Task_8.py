@@ -50,7 +50,7 @@ def calcii():
 calcii()
 
 
-#Print one message if the try block raises a NameError and another for other errors
+# iii). Print one message if the try block raises a NameError and another for other errors
 try:
   print(name)
 except NameError:
@@ -58,8 +58,13 @@ except NameError:
 except:
   print("Other error has occured")
 
+  
+# iv). When try-except scenario is not required ?
 
-#Input inside the try catch block
+    " When our program has normal statements , there is no need for try-except "
+  
+
+# v). Input inside the try catch block
 try:
   series=int(input(" name a series : "))
   print(series)
