@@ -1,0 +1,36 @@
+# check a string contains only a-z, A-Z & 0-9
+import re
+string = input("Enter the sentence: ")
+x = re.compile("[A-Za-z0-9]+")
+if x.fullmatch(string):
+    print("It is valid")
+else:
+    print("It is invalid !")
+
+# match a word containing 'ab'
+string = input("Enter the string: ")
+if re.search('ab', string):
+    print("Yes, 'ab' is present")
+else:
+    print("No, 'ab' is not present")
+
+# check for a number at the end of a word/sentence
+string = input("Enter the sentence: ")
+if re.search(r'\d$', string):
+    print("Yes, the last word has a number")
+else:
+    print("No, the last word does not have a number")
+
+# search the numbers 0-9 of length between 1 to 3 in a string
+string = input("Enter the string ")
+if re.search('\d', string) and len(string) <= 3:
+    print("Yes ")
+else:
+    print("No !")
+
+# to match a string that contains only uppercase letters
+string = input("enter the sentence: ")
+if re.match("^[A-Z]+$", string):
+    print("It is a match")
+else:
+    print("There is no match !")
